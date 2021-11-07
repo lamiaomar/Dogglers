@@ -53,7 +53,7 @@ class DogCardAdapter(private val context: Context?, private val layout: Int )
 
        var adapterLayout : View
 
-       if (viewType==3)  adapterLayout = LayoutInflater.from(parent.context).inflate(R.layout.grid_list_item,parent ,false)
+       if (layout==3)  adapterLayout = LayoutInflater.from(parent.context).inflate(R.layout.grid_list_item,parent ,false)
        else adapterLayout = LayoutInflater.from(parent.context).inflate(R.layout.vertical_horizontal_list_item,parent,false)
 
         return DogCardViewHolder(adapterLayout)
