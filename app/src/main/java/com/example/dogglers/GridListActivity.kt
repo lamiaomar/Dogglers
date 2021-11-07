@@ -15,8 +15,8 @@
 */
 package com.example.dogglers
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.dogglers.adapter.DogCardAdapter
 import com.example.dogglers.const.Layout
 import com.example.dogglers.databinding.ActivityGridListBinding
@@ -32,8 +32,8 @@ class GridListActivity : AppCompatActivity() {
 
         binding.gridRecyclerView.adapter = DogCardAdapter(
             applicationContext,
-            Layout.GRID,
-            null
+            Layout.GRID
+
         )
 
         // Specify fixed size to improve performance
